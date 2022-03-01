@@ -65,11 +65,11 @@
           }
 
           setInterval(() => {
-            if (xPosition + logo.clientWidth >= window.innerWidth || xPosition <= 0) {
+            if (xPosition + logo.clientWidth >= section.clientWidth || xPosition <= 0) {
               xSpeed = -xSpeed;
               randomColor();
             }
-            if (yPosition + logo.clientHeight >= window.innerHeight || yPosition <= 0) {
+            if (yPosition + logo.clientHeight >= section.clientHeight || yPosition <= 0) {
               ySpeed = -ySpeed;
               randomColor();
             }
