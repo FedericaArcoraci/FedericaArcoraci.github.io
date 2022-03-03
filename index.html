@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             Federica Arcoraci's website
         </title>
@@ -25,17 +26,6 @@
         <h2>
           <a href="service.html">Services</a>
         </h2>
-
-        <div class="box" style="opacity: 0; cursor: default;">
-          <h3>
-            CONTERMPORARY ART ARCHIVIST WORKSHOP
-          </h3>
-          <p>
-            I was selected to the Contemporary Art Archivists workshop run by CRRI
-            I was selected to the Contemporary Art Archivists workshop run by CRRI
-            I was selected to the Contemporary Art Archivists workshop run by CRRI
-          </p>
-        </div>
 
         <div id="bounce">
           <p>ARCHIVE</p>
@@ -76,11 +66,11 @@
           }
 
           setInterval(() => {
-            if (xPosition + logo.clientWidth >= section.clientWidth || xPosition <= 0) {
+            if (xPosition + logo.clientWidth >= section.clientWidth-30 || xPosition <= 0) {
               xSpeed = -xSpeed;
               randomColor();
             }
-            if (yPosition + logo.clientHeight >= section.clientHeight || yPosition <= 0) {
+            if (yPosition + logo.clientHeight >= section.clientHeight-10 || yPosition <= 0) {
               ySpeed = -ySpeed;
               randomColor();
             }
